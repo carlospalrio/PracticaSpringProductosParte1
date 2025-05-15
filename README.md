@@ -64,3 +64,44 @@ Se adjunta el documento `Pruebas_API_Productos.pdf` con la descripción de los t
 ## Autor
 Carlos Palomino – Equipo 1 (API & Base de Datos)  
 Profesor/a: Carmen Quintás
+
+
+
+# PracticaSpringProductosParte2
+
+## Cliente Java Swing - Consumo de API REST
+
+## Descripción
+Cliente de escritorio desarrollado en Java (Swing) que se conecta a la API REST de productos para permitir la gestión visual (CRUD) de los datos.
+
+## Tecnologías utilizadas
+- Java 17
+- Java Swing
+- HTTP Client (Java 11+)
+- Jackson (para manejar JSON)
+
+## Requisitos previos
+- Tener la API ejecutándose en `http://localhost:8081/api/productos`
+- Tener configurado Java 11 o superior
+- Jackson en el classpath (`com.fasterxml.jackson.core:jackson-databind`)
+
+## Funcionalidades del cliente
+
+| Acción     | Método HTTP | Endpoint REST                | Descripción                            |
+|------------|-------------|------------------------------|----------------------------------------|
+| Listar     | GET         | /api/productos               | Muestra todos los productos            |
+| Crear      | POST        | /api/productos               | Añade un nuevo producto                |
+| Actualizar | PUT         | /api/productos/{id}          | Modifica el producto seleccionado      |
+| Eliminar   | DELETE      | /api/productos/{id}          | Elimina el producto seleccionado       |
+
+## Cómo ejecutar el cliente
+
+1. Abrir el archivo `ClienteApp.java` y ejecutar el método `main()`.
+2. Interactuar con la interfaz gráfica:
+   - Ver lista de productos.
+   - Añadir nuevos productos.
+   - Editar productos seleccionados.
+   - Eliminar productos seleccionados.
+
+## Autor
+Biel Fernández – Equipo 2 (Cliente gráfico)
