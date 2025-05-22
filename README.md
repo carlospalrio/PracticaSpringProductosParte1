@@ -1,4 +1,4 @@
-# PracticaSpringProductosParte1
+# PracticaSpringVheiculosParte1
 
 # API REST CRUD - Spring Boot + MySQL
 
@@ -37,29 +37,29 @@ server.port=8081
 1. Clonar el repositorio o descargar el código fuente.
 2. Abrir el proyecto en IntelliJ IDEA u otro IDE compatible con Spring Boot.
 3. Ejecutar la clase principal: `CrudApiApplication.java`
-4. Acceder a la API desde: `http://localhost:8081/api/productos`
+4. Acceder a la API desde: `http://localhost:8081/api/vehiculos`
 
 ## Endpoints disponibles
 
 | Método | URL                          | Descripción                    |
 |--------|------------------------------|--------------------------------|
-| GET    | /api/productos               | Lista todos los productos      |
-| GET    | /api/productos/{id}          | Consulta un producto por ID    |
-| POST   | /api/productos               | Crea un nuevo producto         |
-| PUT    | /api/productos/{id}          | Actualiza un producto existente|
-| DELETE | /api/productos/{id}          | Elimina un producto por ID     |
+| GET    | /api/vehiculos               | Lista todos los vehiculos      |
+| GET    | /api/vehiculos/{id}          | Consulta un vehiculo por ID    |
+| POST   | /api/vehiculos               | Crea un nuevo vehiculo         |
+| PUT    | /api/vehiculos/{id}          | Actualiza un vehiculo existente|
+| DELETE | /api/vehiculos/{id}          | Elimina un vehiculo por ID     |
 
 ## Pruebas realizadas
 
 Las pruebas se realizaron utilizando Postman y validan que cada operación CRUD funciona correctamente:
 
-- ✔ `GET /api/productos` devuelve `200 OK` y lista de productos.
-- ✔ `POST /api/productos` crea un producto y devuelve `200 OK` o `201 Created`.
-- ✔ `GET /api/productos/{id}` devuelve `200 OK` o `404 Not Found`.
-- ✔ `PUT /api/productos/{id}` actualiza un producto correctamente.
-- ✔ `DELETE /api/productos/{id}` elimina el producto con código `204 No Content`.
+- ✔ `GET /api/vehiculos` devuelve `200 OK` y lista de vehiculos.
+- ✔ `POST /api/vehiculos` crea un vehiculo y devuelve `200 OK` o `201 Created`.
+- ✔ `GET /api/vehiculos/{id}` devuelve `200 OK` o `404 Not Found`.
+- ✔ `PUT /api/vehiculos/{id}` actualiza un vehiculo correctamente.
+- ✔ `DELETE /api/vehiculos/{id}` elimina el vehiculo con código `204 No Content`.
 
-Se adjunta el documento `Pruebas_API_Productos.pdf` con la descripción de los tests.
+Se adjunta el documento `Pruebas_API_Vehiculos.pdf` con la descripción de los tests.
 
 ## Autor
 Carlos Palomino – Equipo 1 (API & Base de Datos)  
@@ -67,7 +67,7 @@ Profesor/a: Carmen Quintás
 
 
 
-# PracticaSpringProductosParte2
+# PracticaSpringVehiculosParte2
 
 ## Cliente Java Swing - Consumo de API REST
 
@@ -81,7 +81,7 @@ Cliente de escritorio desarrollado en Java (Swing) que se conecta a la API REST 
 - Jackson (para manejar JSON)
 
 ## Requisitos previos
-- Tener la API ejecutándose en `http://localhost:8081/api/productos`
+- Tener la API ejecutándose en `http://localhost:8081/api/vehiculos`
 - Tener configurado Java 11 o superior
 - Jackson en el classpath (`com.fasterxml.jackson.core:jackson-databind`)
 
@@ -89,19 +89,19 @@ Cliente de escritorio desarrollado en Java (Swing) que se conecta a la API REST 
 
 | Acción     | Método HTTP | Endpoint REST                | Descripción                            |
 |------------|-------------|------------------------------|----------------------------------------|
-| Listar     | GET         | /api/productos               | Muestra todos los productos            |
-| Crear      | POST        | /api/productos               | Añade un nuevo producto                |
-| Actualizar | PUT         | /api/productos/{id}          | Modifica el producto seleccionado      |
-| Eliminar   | DELETE      | /api/productos/{id}          | Elimina el producto seleccionado       |
+| Listar     | GET         | /api/vehiculos               | Muestra todos los vehiculos            |
+| Crear      | POST        | /api/vehiculos               | Añade un nuevo vehiculo                |
+| Actualizar | PUT         | /api/vehiculos/{id}          | Modifica el vehiculo seleccionado      |
+| Eliminar   | DELETE      | /api/vehiculos/{id}          | Elimina el vehiculo seleccionado       |
 
 ## Cómo ejecutar el cliente
 
-1. Abrir el archivo `ClienteApp.java` y ejecutar el método `main()`.
+1. Abrir el archivo `VehiculoApp.java` y ejecutar el método `main()`.
 2. Interactuar con la interfaz gráfica:
-   - Ver lista de productos.
-   - Añadir nuevos productos.
-   - Editar productos seleccionados.
-   - Eliminar productos seleccionados.
+   - Ver lista de vehiculos.
+   - Añadir nuevos vehiculos.
+   - Editar vehiculos seleccionados.
+   - Eliminar vehiculos seleccionados.
 
 ## Autor
 Biel Fernández – Equipo 2 (Cliente gráfico)
